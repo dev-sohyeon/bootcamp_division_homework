@@ -5,17 +5,12 @@
 
 def main():
     while True:
-        n = input("")
-        if not n.isdigit():
+        n = int(input(""))
+        if n <= 0:
             print("X")
             continue
         else:
-            n = int(n)
-            if n <= 0:
-                print("X")
-                continue
-            else:
-                break
+            break
 
     total = 0
     for i in range(1, n+1):
