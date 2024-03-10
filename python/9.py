@@ -4,7 +4,24 @@
 """
 
 def main():
-    # 이곳에 코드를 작성해주세요!
+    while True:
+        n = input("")
+        if not n.isdigit():
+            print("X")
+            continue
+        else:
+            n = int(n)
+            if n <= 0:
+                print("X")
+                continue
+            else:
+                break
+
+    total = 0
+    for i in range(1, n+1):
+        total += i
+
+    print(total)
 
     return
 

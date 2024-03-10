@@ -4,7 +4,14 @@
 """
 
 def main():
-    # 이곳에 코드를 작성해주세요!
+    # 사용자로부터 나이 입력 받기
+    age = int(input(""))
+
+    # 나이가 61세 이상인지 확인 후 할인 여부 결정
+    if age >= 61:
+        print("DISCOUNT\nBOARD")
+    else:
+        print("BOARD")
 
     return
 
